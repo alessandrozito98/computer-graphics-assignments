@@ -1,0 +1,12 @@
+﻿  Assignment02.cpp
+c:\users\alessandro\clionprojects\cg-assignments\a02\assignment02.cpp(23): warning C4067: token imprevisti dopo una direttiva per il preprocessore. Previsto un carattere di nuova riga
+c:\users\alessandro\clionprojects\cg-assignments\a02\assignment02.cpp(47): warning C4067: token imprevisti dopo una direttiva per il preprocessore. Previsto un carattere di nuova riga
+c:\users\alessandro\clionprojects\cg-assignments\a02\assignment02.cpp(66): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\transforms.cpp(13): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\transforms.cpp(20): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\transforms.cpp(27): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\transforms.cpp(34): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\transforms.cpp(48): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\assignment02.cpp(98): warning C4018: '<': errata corrispondenza tra signed e unsigned
+c:\users\alessandro\clionprojects\cg-assignments\a02\assignment02.cpp(288): warning C4305: 'inizializzazione': troncamento da 'double' a 'const float'
+c:\users\alessandro\clionprojects\cg-assignments\a02\assignment02.cpp(416): fatal error C1075: '{': non sono stati trovati token corrispondenti
