@@ -1,0 +1,13 @@
+﻿  Assignment08.cpp
+c:\users\alessandro\clionprojects\cg-assignments\a08\assignment08.cpp(97): warning C4018: '<': errata corrispondenza tra signed e unsigned
+c:\users\alessandro\clionprojects\cg-assignments\a08\assignment08.cpp(2374): warning C4018: '<': errata corrispondenza tra signed e unsigned
+c:\users\alessandro\clionprojects\cg-assignments\a08\assignment08.cpp(2394): warning C4018: '<': errata corrispondenza tra signed e unsigned
+c:\users\alessandro\clionprojects\cg-assignments\a08\assignment08.cpp(2577): warning C4018: '<': errata corrispondenza tra signed e unsigned
+c:\users\alessandro\clionprojects\cg-assignments\a08\assignment08.cpp(2579): warning C4101: 'delta': variabile locale senza riferimenti
+  updatePosition.cpp
+c:\users\alessandro\clionprojects\cg-assignments\a08\updateposition.cpp(2): error C2653: 'glm' non è il nome di una classe o di uno spazio dei nomi
+c:\users\alessandro\clionprojects\cg-assignments\a08\updateposition.cpp(2): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
+c:\users\alessandro\clionprojects\cg-assignments\a08\updateposition.cpp(2): error C2146: errore di sintassi: ';' mancante prima dell'identificatore 'getRobotWorldMatrix'
+c:\users\alessandro\clionprojects\cg-assignments\a08\updateposition.cpp(2): error C2143: errore di sintassi: ';' mancante prima di '{'
+c:\users\alessandro\clionprojects\cg-assignments\a08\updateposition.cpp(2): error C2447: '{': intestazione di funzione mancante. Elenco formale di tipo obsoleto?
+  Generazione del codice in corso...
