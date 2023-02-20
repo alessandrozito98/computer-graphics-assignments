@@ -14,9 +14,9 @@
 			   
 	// Make the object 2 times smaller
 	const float MT3[] =  {
-			   2.0,		0.0,		0.0,		0.0,
-			   0.0,		2.0,		0.0,		0.0,
-			   0.0,		0.0,		2.0,		0.0,
+			   0.5,		0.0,		0.0,		0.0,
+			   0.0,		0.5,		0.0,		0.0,
+			   0.0,		0.0,		0.5,		0.0,
 			   0.0,		0.0,		0.0,		1.0};
 			   
 	// Make the object 2 times longer on the z axis, and half on the other axis

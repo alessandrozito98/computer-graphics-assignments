@@ -30,22 +30,10 @@
 *.exe
 *.out
 *.app
-
-# Junk Files
-.gitignore
+*.bin
 
 # Folders
 **/.vs
 **/.DS_STORE
 **/x64
-A00
-A01
-A02
-A04/.vs
-A04/.DS_STORE
-A04/x64
-A04/Debug
-A06/.vs
-A06/.DS_STORE
-A06/x64
-A06/Debug
+**/Debug

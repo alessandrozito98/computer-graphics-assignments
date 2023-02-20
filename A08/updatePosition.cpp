@@ -9,46 +9,58 @@ glm::mat4 getRobotWorldMatrix(GLFWwindow* window) {
 												//  the ones you think necessary for the task
 	glm::mat4 out;
 	
+	static float MOVE_SPEED = 0.20;
+
+	static auto startTime = std::chrono::high_resolution_clock::now();
+	static float lastTime = 0.0f;
+
+	auto currentTime = std::chrono::high_resolution_clock::now();
+	float time = std::chrono::duration<float, std::chrono::seconds::period>(currentTime - startTime).count();
+	float deltaT = time - lastTime;
+
+	lastTime = time;
+
+
 	static float yaw = 0.0;
 
 	if (glfwGetKey(window, GLFW_KEY_A))
 	{
-		pos -=  glm::vec3(0.020, 0, 0);
+		pos -=  MOVE_SPEED * glm::vec3(1, 0, 0) * deltaT;
 		yaw = 180.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_D))
 	{
-		pos += glm::vec3(0.020, 0, 0);
+		pos += MOVE_SPEED * glm::vec3(1, 0, 0) * deltaT;
 		yaw = 0.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_W))
 	{
-		pos -= glm::vec3(0, 0, 0.020);
+		pos -= MOVE_SPEED * glm::vec3(0, 0, 1) * deltaT;
 		yaw = 90.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_S))
 	{
-		pos += glm::vec3(0, 0, 0.020);
+		pos += MOVE_SPEED * glm::vec3(0, 0, 1) * deltaT;
 		yaw = -90.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_A) && glfwGetKey(window, GLFW_KEY_W))
 	{
-		pos += glm::vec3(-0.028, 0, -0.028);
+		pos += float(sqrt(2)) * MOVE_SPEED * glm::vec3(-1, 0, -1) * deltaT;
 		yaw = 135.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_D) && glfwGetKey(window, GLFW_KEY_W))
 	{
-		pos += glm::vec3(0.028, 0, -0.028);
+		pos += float(sqrt(2)) * MOVE_SPEED * glm::vec3(1, 0, -1) * deltaT;
 		yaw = 45.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_D) && glfwGetKey(window, GLFW_KEY_S))
 	{
-		pos += glm::vec3(0.028, 0, 0.028);
+		pos += float(sqrt(2)) * MOVE_SPEED * glm::vec3(1, 0, 1) * deltaT;
 		yaw = -45.0;
 	}
 	if (glfwGetKey(window, GLFW_KEY_A) && glfwGetKey(window, GLFW_KEY_S))
 	{
-		pos += glm::vec3(-0.028, 0, 0.028);
+		pos += float(sqrt(2)) * MOVE_SPEED * glm::vec3(-1, 0, 1) * deltaT;
 		yaw = -135.0;
 	}
 
