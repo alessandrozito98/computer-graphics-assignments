@@ -15,10 +15,10 @@ CFLAGS = -std=c++17 -O3
 INCLUDE = -I$(DIR)/headers
 LDFLAGS = -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
 
-all: clean build test
+all: clean shader build test
 
-# shader:
-# 	cd $(DIR)/shaders/ && ./compile.sh
+shader:
+    cd $(DIR)/shaders/ && ./compile.sh
 
 build: $(FILEPATH).cpp
 	g++ $(CFLAGS) -o $(FILEPATH) $(FILEPATH).cpp $(INCLUDE) $(LDFLAGS)
